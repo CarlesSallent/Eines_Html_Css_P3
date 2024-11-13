@@ -66,6 +66,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
   display: flex;
 }
 
