@@ -81,7 +81,6 @@ masButton.addEventListener('click', () => {
 });
 
 // QUITAR DESCRIPCIÓN DE CATEGORY EN PANTALLAS PEQUEÑAS
-  
 function ocultarTexto() {
   if (window.innerWidth <= 500) {
     const textElements = document.querySelectorAll('p.text-atraction');
