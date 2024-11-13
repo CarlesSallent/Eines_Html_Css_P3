@@ -30,6 +30,7 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
+
 // MOSTRAR MENU PRINCIPAL Y SUBMENU MUSEOS Y ATRACCIONES
 const burgerMenu = document.querySelector('#burger-menu');
 const nav2 = document.querySelector('#nav2');
@@ -58,6 +59,7 @@ nav3.addEventListener('mouseleave', () => {
   nav3.style.display = 'none';
 });
 
+
 // FUNCIONES SUBMENUS PARA PANTALLAS TACTILES
 const masButton = document.querySelector('#mas');
 
@@ -80,8 +82,8 @@ masButton.addEventListener('click', () => {
   }
 });
 
+
 // QUITAR DESCRIPCIÓN DE CATEGORY EN PANTALLAS PEQUEÑAS
-  
 function ocultarTexto() {
   if (window.innerWidth <= 500) {
     const textElements = document.querySelectorAll('p.text-atraction');
@@ -99,3 +101,18 @@ function ocultarTexto() {
 
 window.onload = ocultarTexto ();
 window.addEventListener('resize', ocultarTexto);
+
+
+// FORMATO ESPECIAL PARA EL LINK DE NAVEGACIÓN DE LA PÁGINA ACTUAL
+
+document.addEventListener("DOMContentLoaded", ()=> {
+  const paginaActual = window.location.pathname;
+  const linksNavegacion = document.querySelectorAll("nav#nav2 ul li a");
+
+  linksNavegacion.forEach(link => {
+    if (link.getAttribute("href") === paginaActual) {
+      link.parentElement.id = "active";
+      link.removeAttribute("href");
+    }
+  })
+});
