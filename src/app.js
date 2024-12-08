@@ -75,8 +75,10 @@ window.addEventListener('resize', submenuPantallaTactil);
 masButton.addEventListener('click', () => {
   if (nav3.style.display ==='flex') {
     nav3.style.display = 'none';
+    masButton.innerHTML = ' +';
   } else {
     nav3.style.display = 'flex';
+    masButton.innerHTML = '-'
   }
 });
 
@@ -100,16 +102,34 @@ window.onload = ocultarTexto ();
 window.addEventListener('resize', ocultarTexto);
 
 // PONER ID=ACTIVA A LA PÁGINA ACTUAL
-const currentPage = window.location.pathname.split("/").pop();
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-const links = document.querySelectorAll(".footer-links a");
+function setActiveLink(selector) {
+  const links = document.querySelectorAll(`${selector} a`);
+  
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+    
+    if (href.endsWith(currentPage)) {
+      link.setAttribute("id", "active");
+    } else {
+      link.removeAttribute("id");
+    }
+  });
+}
 
-links.forEach(link => {
-  const href = link.getAttribute("href");
+setActiveLink(".footer-links");
+setActiveLink(".nav-links");
+setActiveLink("#nav3");
 
-  if (href.endsWith(currentPage)) {
-    link.parentElement.setAttribute("id", "active");
-  } else {
-    link.parentElement.removeAttribute("id");
-  }
+// TITULO PÀGINA
+document.addEventListener("DOMContentLoaded", () => {
+  const pageTitle = document.title;
+
+  const titleDiv = document.getElementById("Title");
+
+  const h1 = document.createElement("h1");
+  h1.textContent = pageTitle; 
+
+  titleDiv.appendChild(h1);
 });

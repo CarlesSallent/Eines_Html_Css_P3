@@ -30,10 +30,9 @@ h3 {
   padding: 0.5rem;
 }
 
-#active {
-  color: darkblue;
-  text-decoration: underline;
-}
+
+
+
 
 @media (max-width: 500px){
   h1{
@@ -48,7 +47,7 @@ h3 {
 
 @media (min-width: 501px) and (max-width: 1000px){
   h1{
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   h2{
@@ -76,10 +75,22 @@ header {
   padding-bottom: 0.5rem;
 }
 
+#Title {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
 #burger-menu {
   width: 30px;
   height: 30px;
   cursor: pointer;
+}
+
+.burger-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain; 
 }
 
 #nav2 {
@@ -127,14 +138,35 @@ header {
   margin-bottom: 0.8rem;
 }
 
+#nav2 li > #active {
+  color: darkblue;
+  text-decoration: underline;
+  cursor: default;
+}
+
+
+
+#nav3 a:hover{
+  color: darkmagenta;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
   #nav2 ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 
+  #nav3 a {
+    color: initial;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   #mas {
     cursor: pointer;
+    padding-left: 0.5rem;
   }
 
   #nav3 {
@@ -672,8 +704,8 @@ footer #active a:hover{
 }
 
 .footer-logo-img {
-  width: 90px;
-  height: 90px;
+  width: 65px;
+  height: 65px;
   object-fit: contain; 
 }
 
@@ -718,6 +750,12 @@ footer #active a:hover{
 }
 
 @media (min-width: 501px) {
+  .footer-logo-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain; 
+  }
+
   footer {
     flex-wrap: nowrap; 
     justify-content: space-between; 
