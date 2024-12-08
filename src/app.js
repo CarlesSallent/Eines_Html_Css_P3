@@ -98,3 +98,18 @@ function ocultarTexto() {
 
 window.onload = ocultarTexto ();
 window.addEventListener('resize', ocultarTexto);
+
+// PONER ID=ACTIVA A LA PÁGINA ACTUAL
+const currentPage = window.location.pathname.split("/").pop();
+
+const links = document.querySelectorAll(".footer-links a");
+
+links.forEach(link => {
+  const href = link.getAttribute("href");
+
+  if (href.endsWith(currentPage)) {
+    link.parentElement.setAttribute("id", "active");
+  } else {
+    link.parentElement.removeAttribute("id");
+  }
+});
