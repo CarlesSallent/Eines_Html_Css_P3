@@ -238,6 +238,33 @@ iframe{
   object-fit: cover;
 }
 
+.diagonal-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+}
+
+.img-top, .img-bottom {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 260px; 
+}
+.img-top {
+  clip-path: polygon(0% 0%, 60% 0%, 30% 100%, 0% 100%);
+}
+
+.img-bottom {
+  clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 30% 100%);
+}
+
+.card2 {
+  margin-top: 16rem;
+}
+
 @media (max-width: 1000px) {
   header {
     padding-left: 1rem;
@@ -258,6 +285,10 @@ iframe{
 
   .img{
     height:10rem;
+  }
+
+  .card2 {
+    margin-top:10rem;
   }
 }
 

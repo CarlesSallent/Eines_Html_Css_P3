@@ -48,8 +48,32 @@
           </a>
         </li>
         <li>
-          <a href="category.html">
-            <div class="img">
+          <a href="category.html" class="diagonal-container"> 
+            <div class="img img-top">
+              <picture>
+                <source 
+                  srcset="img/03-b-musée_des_Augustins-640.avif 640w,
+                          img/03-b-musée_des_Augustins-1280.avif 1280w" 
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  type="image/avif">
+                <source 
+                  srcset="img/03-b-musée_des_Augustins-640.webp 640w,
+                          img/03-b-musée_des_Augustins-1280.webp 1280w" 
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  type="image/webp">
+                <img
+                  class="img clip"
+                  src="img/03-b-musée_des_Augustins-640.jpeg" 
+                  srcset="img/03-b-musée_des_Augustins-640.jpeg 640w,
+                          img/03-b-musée_des_Augustins-1280.jpeg 1280w"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  loading="lazy"
+                  alt="Museo de los Agustinos"
+                  width="512"
+                  height="320">
+              </picture>
+            </div>
+            <div class="img img-bottom">
               <picture>
                 <source 
                   srcset="img/03-b-Cité_de_l'espace-640.avif 640w,
@@ -62,6 +86,7 @@
                   sizes="(max-width: 640px) 100vw, 50vw"
                   type="image/webp">
                 <img
+                  class="img clip"
                   src="img/03-b-Cité_de_l'espace-640.jpeg" 
                   srcset="img/03-b-Cité_de_l'espace-640.jpeg 640w,
                           img/03-b-Cité_de_l'espace-1280.jpeg 1280w"
@@ -72,8 +97,8 @@
                   height="320">
               </picture>
             </div>
-            <div class="card">
-                <h3>Museos y Atracciones</h3>
+            <div class="card2">
+              <h3>Museos y Atracciones</h3>
             </div>
           </a>
         </li>
