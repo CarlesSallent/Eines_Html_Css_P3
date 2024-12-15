@@ -188,6 +188,20 @@ header {
   }
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.star-color {
+  animation: spin 1s linear 1;
+  transform-origin: center;
+}
+
 /* INDEX PAGE */
 iframe{
   width: 100%;
