@@ -12,45 +12,241 @@
 </head>
 <main>
   <include src="src/header.html"></include>
-  <div class="detail-container">
-    <img src="img/Mir_replica_at_Cite_de_l'Espace_1.jpg" alt="Cite de l'espace">
-    <div>
-      <article class="detail">
-        <h2>Descubre la Cité de l'espace</h2>
-        <div class="round">
-            <p>La Cité de l'Espace es un parque temático dedicado al espacio y la exploración espacial. Es uno de los destinos más populares en Toulouse, atrayendo tanto a familias como a entusiastas de la ciencia y la tecnología.</p>
-            <p>En este centro, los visitantes pueden explorar réplicas de cohetes, naves espaciales y módulos de la Estación Espacial Internacional, así como participar en actividades interactivas que simulan la experiencia de los astronautas.</p>
-            <p>Además, la Cité de l'Espace cuenta con un planetario y exhibiciones educativas que abordan temas relacionados con el universo, los planetas y las últimas innovaciones en tecnología espacial.</p>
-        </div>
-        <div class="round">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"> <img src="img/Cité_de_l'espace_Toulouse_1.jpg" alt="Cité de l'espace 1"> </div>
-              <div class="swiper-slide"> <img src="img/512px-Apollo_space_suit_at_Cité_de_l´Espace-IMG_1754.jpg" alt="Cité de l'espace 2"> </div>
-              <div class="swiper-slide"> <img src="img/France-Toulouse-Cite_de_l'espace-Ariane_5.jpg" alt="Cité de l'espace 3"> </div>
-              <div class="swiper-slide"> <img src="img/512px-Astrovan_at_the_Cité_de_l'Espace-IMG_1740.jpg" alt="Cité de l'espace 4"> </div>
-              <div class="swiper-slide"> <img src="img/512px-Curiosity_model_at_Cité_de_l´Espace-IMG_1702.jpg" alt="Cité de l'espace 5"> </div>
-              <div class="swiper-slide"> <img src="img/512px-MIR_model_at_the_Cité_de_l'Espace-IMG_1832.jpg" alt="Cité de l'espace 6"> </div>
-              <div class="swiper-slide"> <img src="img/512px-Orion_spacecraft_model_at_Cité_de_l´Espace-IMG_1787.jpg" alt="Cité de l'espace 7"> </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+  <section class="detail-container">
+    <picture>
+      <source 
+        media="(max-width: 600px)" 
+        srcset="img/01-b2-Mir_replica-320.avif 320w,
+                img/01-b2-Mir_replica-640.avif 640w,
+                img/01-b2-Mir_replica-1280.avif 1280w" 
+        sizes="100vw" 
+        type="image/avif">
+      <source 
+        media="(max-width: 600px)" 
+        srcset="img/01-b2-Mir_replica-320.webp 320w,
+                img/01-b2-Mir_replica-640.webp 640w,
+                img/01-b2-Mir_replica-1280.webp 1280w" 
+        sizes="100vw" 
+        type="image/webp">
+      <source 
+        srcset="img/01-b-Mir_replica-320.avif 320w,
+                img/01-b-Mir_replica-640.avif 640w,
+                img/01-b-Mir_replica-1280.avif 1280w,
+                img/01-b-Mir_replica-1920.avif 1920w" 
+        sizes="100vw"
+        type="image/avif">
+      <source 
+        srcset="img/01-b-Mir_replica-320.webp 320w,
+                img/01-b-Mir_replica-640.webp 640w,
+                img/01-b-Mir_replica-1280.webp 1280w,
+                img/01-b-Mir_replica-1920.webp 1920w" 
+        sizes="100vw"
+        type="image/webp">
+      <img 
+        src="img/01-b-Mir_replica-1280.jpeg" 
+        srcset="img/01-b-Mir_replica-320.jpeg 320w,
+                img/01-b-Mir_replica-640.jpeg 640w,
+                img/01-b-Mir_replica-1280.jpeg 1280w,
+                img/01-b-Mir_replica-1920.jpeg 1920w" 
+        sizes="100vw"
+        alt="Réplica de la estación espacial Mir">
+    </picture>
+    <main class="information">
+      <div>
+        <article class="detail">
+          <h2>Descubre la Cité de l'espace</h2>
+          <div class="round">
+              <p>La Cité de l'Espace es un parque temático dedicado al espacio y la exploración espacial. Es uno de los destinos más populares en Toulouse, atrayendo tanto a familias como a entusiastas de la ciencia y la tecnología.</p>
+              <p>En este centro, los visitantes pueden explorar réplicas de cohetes, naves espaciales y módulos de la Estación Espacial Internacional, así como participar en actividades interactivas que simulan la experiencia de los astronautas.</p>
+              <p>Además, la Cité de l'Espace cuenta con un planetario y exhibiciones educativas que abordan temas relacionados con el universo, los planetas y las últimas innovaciones en tecnología espacial.</p>
           </div>
-        </div>
-      </article>
-      <aside>
-        <ul>
-          <li><span>Ubicación:</span> Avenue Jean Gonord, 31506 Toulouse</li>
-          <li><span>Telfono:</span> +33 (0) 567 22 23 24</li>
-          <li><span>Horario:</span> 10:00 a 18:00 (varía según la temporada)</li>
-          <li><span>Precio de entrada:</span> 25€ (adultos), 17€ (niños)</li>
-          <li><span>Pase anual:</span> 44€ (adultos), 33€ (niños), 154€ (familia)</li>
-          <li><span>Hoteles asociados:</span> Novotel Toulouse, Hotel Mercure Toulose, Ibis Style Cité de l'espace, Hotel Campanile Cité de l'espace</li>
-        </ul>
-      </aside>
-    </div>
-  </div>
+          <div class="round">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <picture>
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_01-320.avif 320w,
+                              img/04-bv-Cité_de_l'Espace_01-640.avif 640w,
+                              img/04-bv-Cité_de_l'Espace_01-1280.avif 1280w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_01-320.webp 320w,
+                              img/04-bv-Cité_de_l'Espace_01-640.webp 640w,
+                              img/04-bv-Cité_de_l'Espace_01-1280.webp 1280w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_01-320.avif 320w,
+                              img/04-bh-Cité_de_l'Espace_01-640.avif 640w,
+                              img/04-bh-Cité_de_l'Espace_01-1280.avif 1280w,
+                              img/04-bh-Cité_de_l'Espace_01-1920.avif 1920w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_01-320.webp 320w,
+                              img/04-bh-Cité_de_l'Espace_01-640.webp 640w,
+                              img/04-bh-Cité_de_l'Espace_01-1280.webp 1280w,
+                              img/04-bh-Cité_de_l'Espace_01-1920.webp 1920w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <img 
+                      src="img/04-bh-Cité_de_l'Espace_01-1280.jpeg" 
+                      srcset="img/04-bh-Cité_de_l'Espace_01-320.jpeg 320w,
+                              img/04-bh-Cité_de_l'Espace_01-640.jpeg 640w,
+                              img/04-bh-Cité_de_l'Espace_01-1280.jpeg 1280w,
+                              img/04-bh-Cité_de_l'Espace_01-1920.jpeg 1920w" 
+                      sizes="60vw"
+                      loading="lazy"
+                      alt="Cité de l'espace 1">
+                  </picture>
+                </div>
+                <div class="swiper-slide"> 
+                  <picture>
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_02-320.avif 320w,
+                              img/04-bv-Cité_de_l'Espace_02-640.avif 640w,
+                              img/04-bv-Cité_de_l'Espace_02-1280.avif 1280w" 
+                      sizes="60vw"
+                      type="image/avif">
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_02-320.webp 320w,
+                              img/04-bv-Cité_de_l'Espace_02-640.webp 640w,
+                              img/04-bv-Cité_de_l'Espace_02-1280.webp 1280w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_02-320.avif 320w,
+                              img/04-bh-Cité_de_l'Espace_02-640.avif 640w,
+                              img/04-bh-Cité_de_l'Espace_02-1280.avif 1280w,
+                              img/04-bh-Cité_de_l'Espace_02-1920.avif 1920w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_02-320.webp 320w,
+                              img/04-bh-Cité_de_l'Espace_02-640.webp 640w,
+                              img/04-bh-Cité_de_l'Espace_02-1280.webp 1280w,
+                              img/04-bh-Cité_de_l'Espace_02-1920.webp 1920w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <img 
+                      src="img/04-bh-Cité_de_l'Espace_02-1280.jpeg" 
+                      srcset="img/04-bh-Cité_de_l'Espace_02-320.jpeg 320w,
+                              img/04-bh-Cité_de_l'Espace_02-640.jpeg 640w,
+                              img/04-bh-Cité_de_l'Espace_02-1280.jpeg 1280w,
+                              img/04-bh-Cité_de_l'Espace_02-1920.jpeg 1920w" 
+                      sizes="60vw"
+                      loading="lazy"
+                      alt="Cité de l'espace 2">
+                  </picture>
+                </div>
+                <div class="swiper-slide"> 
+                  <picture>
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_03-320.avif 320w,
+                              img/04-bv-Cité_de_l'Espace_03-640.avif 640w,
+                              img/04-bv-Cité_de_l'Espace_03-1280.avif 1280w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_03-320.webp 320w,
+                              img/04-bv-Cité_de_l'Espace_03-640.webp 640w,
+                              img/04-bv-Cité_de_l'Espace_03-1280.webp 1280w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_03-320.avif 320w,
+                              img/04-bh-Cité_de_l'Espace_03-640.avif 640w,
+                              img/04-bh-Cité_de_l'Espace_03-1280.avif 1280w,
+                              img/04-bh-Cité_de_l'Espace_03-1920.avif 1920w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_03-320.webp 320w,
+                              img/04-bh-Cité_de_l'Espace_03-640.webp 640w,
+                              img/04-bh-Cité_de_l'Espace_03-1280.webp 1280w,
+                              img/04-bh-Cité_de_l'Espace_03-1920.webp 1920w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <img 
+                      src="img/04-bh-Cité_de_l'Espace_03-1280.jpeg" 
+                      srcset="img/04-bh-Cité_de_l'Espace_03-320.jpeg 320w,
+                              img/04-bh-Cité_de_l'Espace_03-640.jpeg 640w,
+                              img/04-bh-Cité_de_l'Espace_03-1280.jpeg 1280w,
+                              img/04-bh-Cité_de_l'Espace_03-1920.jpeg 1920w" 
+                      sizes="60vw"
+                      loading="lazy"
+                      alt="Cité de l'espace 3">
+                  </picture>
+                </div>
+                <div class="swiper-slide"> 
+                  <picture>
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_04-320.avif 320w,
+                              img/04-bv-Cité_de_l'Espace_04-640.avif 640w,
+                              img/04-bv-Cité_de_l'Espace_04-1280.avif 1280w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      media="(max-width: 600px)" 
+                      srcset="img/04-bv-Cité_de_l'Espace_04-320.webp 320w,
+                              img/04-bv-Cité_de_l'Espace_04-640.webp 640w,
+                              img/04-bv-Cité_de_l'Espace_04-1280.webp 1280w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_04-320.avif 320w,
+                              img/04-bh-Cité_de_l'Espace_04-640.avif 640w,
+                              img/04-bh-Cité_de_l'Espace_04-1280.avif 1280w,
+                              img/04-bh-Cité_de_l'Espace_04-1920.avif 1920w" 
+                      sizes="60vw" 
+                      type="image/avif">
+                    <source 
+                      srcset="img/04-bh-Cité_de_l'Espace_04-320.webp 320w,
+                              img/04-bh-Cité_de_l'Espace_04-640.webp 640w,
+                              img/04-bh-Cité_de_l'Espace_04-1280.webp 1280w,
+                              img/04-bh-Cité_de_l'Espace_04-1920.webp 1920w" 
+                      sizes="60vw" 
+                      type="image/webp">
+                    <img 
+                      src="img/04-bh-Cité_de_l'Espace_04-1280.jpeg" 
+                      srcset="img/04-bh-Cité_de_l'Espace_04-320.jpeg 320w,
+                              img/04-bh-Cité_de_l'Espace_04-640.jpeg 640w,
+                              img/04-bh-Cité_de_l'Espace_04-1280.jpeg 1280w,
+                              img/04-bh-Cité_de_l'Espace_04-1920.jpeg 1920w" 
+                      sizes="60vw"
+                      loading="lazy"
+                      alt="Cité de l'espace 4">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </article>
+        <aside>
+          <ul>
+            <li><span>Ubicación:</span> Avenue Jean Gonord, 31506 Toulouse</li>
+            <li><span>Telfono:</span> +33 (0) 567 22 23 24</li>
+            <li><span>Horario:</span> 10:00 a 18:00 (varía según la temporada)</li>
+            <li><span>Precio de entrada:</span> 25€ (adultos), 17€ (niños)</li>
+            <li><span>Pase anual:</span> 44€ (adultos), 33€ (niños), 154€ (familia)</li>
+            <li><span>Hoteles asociados:</span> Novotel Toulouse, Hotel Mercure Toulose, Ibis Style Cité de l'espace, Hotel Campanile Cité de l'espace</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+  </section>
   <include src="src/footer.html"></include>
 </body>
 </html>

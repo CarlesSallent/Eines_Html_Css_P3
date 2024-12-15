@@ -13,45 +13,180 @@
 <body>
   <include src="src/header.html"></include>
   <section class="category">
-    <img src="img/Basilica_of_St_Sernin_-_Toulouse_-_France_2014_(2) (1).jpg" alt="Basilique Saint-Sernin">
-    <h2>Explora los principales puntos de interés cultural y turístico de la ciudad.</h2>
-    <div class="atraction-container">
-      <a href="#" class="atraction">
-        <img class="img-atraction" src="img/(Toulouse)_Jean_Beauduy_-_Ensemble_de_sculptures_en_terre_cuite,_musée_des_Augustins.jpg" alt="Ensemble de sculptures en terre cuite"> 
-        <div>
-          <h3>Museo de los Agustinos</h3>
-          <p class="text-atraction">Descubre una rica colección de arte en el Museo de los Agustinos, con obras desde la Edad Media hasta el siglo XIX, en un impresionante convento gótico.</p>
-        </div>
-      </a>
-      <a href="detail.html" class="atraction">
-        <img class="img-atraction" src="img/Cité_de_l'espace_Toulouse_1.jpg" alt="Cité de l'espace">
-        <div>
-          <h3>Cité de l'Espace</h3>
-          <p class="text-atraction">Explora el universo en la Cité de l'Espace, un fascinante parque temático dedicado a la astronomía y la aventura espacial, con simulaciones y réplicas a tamaño real.</p>
-        </div>
-      </a>
-      <a href="#" class="atraction">
-        <img class="img-atraction" src="img/Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg" alt="Basilique Saint-Sernin de Toulouse">
-        <div>
-          <h3>Basílica de San Sernín</h3>
-          <p class="text-atraction">Admira la majestuosa Basílica de Saint-Sernin, una de las joyas del románico en Europa y Patrimonio de la Humanidad de la UNESCO.</p>
-        </div>
-      </a>
-      <a href="#" class="atraction">
-        <img class="img-atraction" src="img/Minotaure.jpg" alt="Monotauro">
-        <div>
-          <h3>La halle de la Machine</h3>
-          <p class="text-atraction">Déjate maravillar en La Halle de la Machine, donde ingeniosas creaciones mecánicas cobran vida en un espectáculo inolvidable.</p>
-        </div>
-      </a>
-      <a href="#" class="atraction">
-        <img class="img-atraction" src="img/Toulouse_Capitole_Night_Wikimedia_Commons.jpg" alt="Capitole de Toulouse">
-        <div>
-          <h3>El Capitolio</h3>
-          <p class="text-atraction">Visita el emblemático Capitolio, sede del Ayuntamiento de Toulouse y símbolo de la ciudad, con su arquitectura única y su historia de siglos.</p>
-        </div>
-      </a>
-    </div>
+    <picture>
+      <source 
+        srcset="img/03-f-St_Sernin-320.avif 320w,
+                img/03-f-St_Sernin-640.avif 640w,
+                img/03-f-St_Sernin-1280.avif 1280w,
+                img/03-f-St_Sernin-1920.avif 1920w" 
+        sizes="100vw"
+        type="image/avif">
+      <source 
+        srcset="img/03-f-St_Sernin-320.webp 320w,
+                img/03-f-St_Sernin-640.webp 640w,
+                img/03-f-St_Sernin-1280.webp 1280w,
+                img/03-f-St_Sernin-1920.webp 1920w" 
+        sizes="100vw"
+        type="image/webp">
+      <img
+        src="img/03-f-St_Sernin-1280.jpeg" 
+        srcset="img/03-f-St_Sernin-320.jpeg 320w,
+                img/03-f-St_Sernin-640.jpeg 640w,
+                img/03-f-St_Sernin-1280.jpeg 1280w,
+                img/03-f-St_Sernin-1920.jpeg 1920w" 
+        sizes="100vw"
+        alt="St Sernin de Toulouse">
+    </picture>
+    <main class="information">
+      <h2>Explora los principales puntos de interés cultural y turístico de la ciudad.</h2>
+      <div class="atraction-container">
+        <a href="#" class="atraction">
+          <picture>
+            <source 
+              srcset="img/03-b-musée_des_Augustins-320.avif 320w,
+                      img/03-b-musée_des_Augustins-640.avif 640w,
+                      img/03-b-musée_des_Augustins-1280.avif 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/avif">
+            <source 
+              srcset="img/03-b-musée_des_Augustins-320.webp 320w,
+                      img/03-b-musée_des_Augustins-640.webp 640w,
+                      img/03-b-musée_des_Augustins-1280.webp 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/webp">
+            <img
+              class="img-atraction"
+              src="img/03-b-musée_des_Augustins-640.jpeg" 
+              srcset="img/03-b-musée_des_Augustins-320.jpeg 320w,
+                      img/03-b-musée_des_Augustins-640.jpeg 640w,
+                      img/03-b-musée_des_Augustins-1280.jpeg 1280w"
+              sizes="(max-width: 800px) 100vw, 50vw"
+              loading="lazy"
+              alt="Musée des Augustins - Ensemble de sculptures en terre cuite">
+          </picture>
+          <div>
+            <h3>Museo de los Agustinos</h3>
+            <p class="text-atraction">Descubre una rica colección de arte en el Museo de los Agustinos, con obras desde la Edad Media hasta el siglo XIX, en un impresionante convento gótico.</p>
+          </div>
+        </a>
+        <a href="detail.html" class="atraction">
+          <picture>
+            <source 
+              srcset="img/01-b-Mir_replica-320.avif 320w,
+                      img/01-b-Mir_replica-640.avif 640w,
+                      img/01-b-Mir_replica-1280.avif 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/avif">
+            <source 
+              srcset="img/01-b-Mir_replica-320.webp 320w,
+                      img/01-b-Mir_replica-640.webp 640w,
+                      img/01-b-Mir_replica-1280.webp 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/webp">
+            <img 
+              class="img-atraction"
+              src="img/01-b-Mir_replica-640.jpeg" 
+              srcset="img/01-b-Mir_replica-320.jpeg 320w,
+                      img/01-b-Mir_replica-640.jpeg 640w,
+                      img/01-b-Mir_replica-1280.jpeg 1280w"
+              sizes="(max-width: 800px) 100vw, 50vw"
+              loading="lazy"
+              alt="Réplica de la estación espacial Mir">
+          </picture>
+          <div>
+            <h3>Cité de l'Espace</h3>
+            <p class="text-atraction">Explora el universo en la Cité de l'Espace, un fascinante parque temático dedicado a la astronomía y la aventura espacial, con simulaciones y réplicas a tamaño real.</p>
+          </div>
+        </a>
+        <a href="#" class="atraction">
+          <picture>
+            <source 
+              srcset="img/03-b-Saint-Sernin-320.avif 320w,
+                      img/03-b-Saint-Sernin-640.avif 640w,
+                      img/03-b-Saint-Sernin-1280.avif 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/avif">
+            <source 
+              srcset="img/03-b-Saint-Sernin-320.webp 320w,
+                      img/03-b-Saint-Sernin-640.webp 640w,
+                      img/03-b-Saint-Sernin-1280.webp 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/webp">
+            <img 
+              class="img-atraction"
+              src="img/03-b-Saint-Sernin-640.jpeg" 
+              srcset="img/03-b-Saint-Sernin-320.jpeg 320w,
+                      img/03-b-Saint-Sernin-640.jpeg 640w,
+                      img/03-b-Saint-Sernin-1280.jpeg 1280w"
+              sizes="(max-width: 800px) 100vw, 50vw"
+              loading="lazy"
+              alt="Basilique Saint-Sernin de Toulouse">
+          </picture>
+          <div>
+            <h3>Basílica de San Sernín</h3>
+            <p class="text-atraction">Admira la majestuosa Basílica de Saint-Sernin, una de las joyas del románico en Europa y Patrimonio de la Humanidad de la UNESCO.</p>
+          </div>
+        </a>
+        <a href="#" class="atraction">
+          <picture>
+            <source 
+              srcset="img/03-b-Minotaure-320.avif 320w,
+                      img/03-b-Minotaure-640.avif 640w,
+                      img/03-b-Minotaure-1280.avif 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/avif">
+            <source 
+              srcset="img/03-b-Minotaure-320.webp 320w,
+                      img/03-b-Minotaure-640.webp 640w,
+                      img/03-b-Minotaure-1280.webp 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/webp">
+            <img 
+              class="img-atraction"
+              src="img/03-b-Minotaure-640.jpeg" 
+              srcset="img/03-b-Minotaure-320.jpeg 320w,
+                      img/03-b-Minotaure-640.jpeg 640w,
+                      img/03-b-Minotaure-1280.jpeg 1280w"
+              sizes="(max-width: 800px) 100vw, 50vw"
+              loading="lazy"
+              alt="Minotaure">
+          </picture>
+          <div>
+            <h3>La halle de la Machine</h3>
+            <p class="text-atraction">Déjate maravillar en La Halle de la Machine, donde ingeniosas creaciones mecánicas cobran vida en un espectáculo inolvidable.</p>
+          </div>
+        </a>
+        <a href="#" class="atraction">
+          <picture>
+            <source 
+              srcset="img/03-b-Capitole-320.avif 320w,
+                      img/03-b-Capitole-640.avif 640w,
+                      img/03-b-Capitole-1280.avif 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/avif">
+            <source 
+              srcset="img/03-b-Capitole-320.webp 320w,
+                      img/03-b-Capitole-640.webp 640w,
+                      img/03-b-Capitole-1280.webp 1280w" 
+              sizes="(max-width: 800px) 100vw, 50vw"
+              type="image/webp">
+            <img 
+              class="img-atraction"
+              src="img/03-b-Capitole-640.jpeg" 
+              srcset="img/03-b-Capitole-320.jpeg 320w,
+                      img/03-b-Capitole-640.jpeg 640w,
+                      img/03-b-Capitole-1280.jpeg 1280w"
+              sizes="(max-width: 800px) 100vw, 50vw"
+              loading="lazy"
+              alt="Capitole de Toulouse">
+          </picture>
+          <div>
+            <h3>El Capitolio</h3>
+            <p class="text-atraction">Visita el emblemático Capitolio, sede del Ayuntamiento de Toulouse y símbolo de la ciudad, con su arquitectura única y su historia de siglos.</p>
+          </div>
+        </a>
+      </div>
+    </main>
   </section>
   <include src="src/footer.html"></include>
 </body>

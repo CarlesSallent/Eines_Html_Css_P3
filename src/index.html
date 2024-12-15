@@ -14,33 +14,101 @@
   <include src="src/header.html"></include>
   <section class="index">
     <iframe src="https://commons.wikimedia.org/wiki/File:Toulouse_en_drone_le_Buzz.webm?embedplayer=yes" frameborder="0" loading="lazy" allow="autoplay; picture-in-picture" allowfullscreen></iframe>
-    <h2>Descubre la historia, los museos y las atracciones de la Ciudad Rosa.</h2>
-    <ul>
-      <li>
-        <a href="presentation.html">
-            <div class="img"><img src="img/Panorama_from_pont_Saint-Pierre_in_Toulouse_-_2012-08-31.jpg" alt="Pont_Saint_Pierre" width="512" height="320"></div>
-            <div class="card">
-                <h3>La Ciudad</h3>
+    <main class="information"> 
+      <h2>Descubre la historia, los museos y las atracciones de la Ciudad Rosa.</h2>
+      <ul>
+        <li>
+          <a href="presentation.html">
+              <div class="img">
+                <picture>
+                  <source 
+                    srcset="img/01-b-pont_Saint-Pierre-640.avif 640w,
+                            img/01-b-pont_Saint-Pierre-1280.avif 1280w" 
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    type="image/avif">
+                  <source 
+                    srcset="img/01-b-pont_Saint-Pierre-640.webp 640w,
+                            img/01-b-pont_Saint-Pierre-1280.webp 1280w" 
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    type="image/webp">
+                  <img
+                    src="img/01-b-pont_Saint-Pierre-640.jpeg" 
+                    srcset="img/01-b-pont_Saint-Pierre-640.jpeg 640w,
+                            img/01-b-pont_Saint-Pierre-1280.jpeg 1280w"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    loading="lazy"
+                    alt="Pont Saint-Pierre"
+                    width="512"
+                    height="320">
+                </picture>
+              </div>
+              <div class="card">
+                  <h3>La Ciudad</h3>
+              </div>
+          </a>
+        </li>
+        <li>
+          <a href="category.html">
+            <div class="img">
+              <picture>
+                <source 
+                  srcset="img/03-b-Cité_de_l'espace-640.avif 640w,
+                          img/03-b-Cité_de_l'espace-1280.avif 1280w" 
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  type="image/avif">
+                <source 
+                  srcset="img/03-b-Cité_de_l'espace-640.webp 640w,
+                          img/03-b-Cité_de_l'espace-1280.webp 1280w" 
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  type="image/webp">
+                <img
+                  src="img/03-b-Cité_de_l'espace-640.jpeg" 
+                  srcset="img/03-b-Cité_de_l'espace-640.jpeg 640w,
+                          img/03-b-Cité_de_l'espace-1280.jpeg 1280w"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  loading="lazy"
+                  alt="Cité de l'Espace"
+                  width="512"
+                  height="320">
+              </picture>
             </div>
-        </a>
-      </li>
-      <li>
-        <a href="category.html">
-          <div class="img"><img src="img/Mir_replica_at_Cite_de_l'Espace_1.jpg" alt="Pont_Saint_Pierre" width="512" height="320"></div>
-          <div class="card">
-              <h3>Museos y Atracciones</h3>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <div class="img"><img src="img/1024px-Cathédrale_Saint-Étienne_Le_triomphe_de_Joseph_Hilaire-Pader.jpg" alt="The triumph of Joseph by Hilaire Pader" width="512" height="320"></div>
-          <div class="card">
-              <h3>La Historia</h3>
-          </div>
-        </a>
-      </li>
-    </ul>
+            <div class="card">
+                <h3>Museos y Atracciones</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="img">
+              <picture>
+                <source 
+                  srcset="img/01-b-triomphe_de_Joseph-640.avif 640w,
+                          img/01-b-triomphe_de_Joseph-1280.avif 1280w" 
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  type="image/avif">
+                <source 
+                  srcset="img/01-b-triomphe_de_Joseph-640.webp 640w,
+                          img/01-b-triomphe_de_Joseph-1280.webp 1280w" 
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  type="image/webp">
+                <img
+                  src="img/01-b-triomphe_de_Joseph-640.jpeg" 
+                  srcset="img/01-b-triomphe_de_Joseph-640.jpeg 640w,
+                          img/01-b-triomphe_de_Joseph-1280.jpeg 1280w"
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  loading="lazy"
+                  alt="Triomphe de Joseph"
+                  width="512"
+                  height="320">
+              </picture>
+            </div>
+            <div class="card">
+                <h3>La Historia</h3>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
   </section>
   <include src="src/footer.html"></include>
 </body>
