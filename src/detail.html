@@ -8,8 +8,13 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lato&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lato&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="preload" as="image" href="img/01-b2-Mir_replica-640.avif" imagesrcset="img/01-b2-Mir_replica-320.avif 320w, img/01-b2-Mir_replica-640.avif 640w, img/01-b2-Mir_replica-1280.avif 1280w" imagesizes="100vw" type="image/avif">
   <script type="module" src="app.js" defer></script>
+  <script type="module" src="app-swiper.js" defer></script>
 </head>
 <body>
   <include src="src/header.html"></include>

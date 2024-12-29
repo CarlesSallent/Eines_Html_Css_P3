@@ -8,7 +8,10 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lato&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lato&display=swap" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Lato&display=swap" rel="stylesheet">
+  </noscript>
   <script type="module" src="app.js" defer></script>
 </head>
 <body>
@@ -37,7 +40,6 @@
                     srcset="img/01-b-pont_Saint-Pierre-640.jpeg 640w,
                             img/01-b-pont_Saint-Pierre-1280.jpeg 1280w"
                     sizes="(max-width: 640px) 100vw, 50vw"
-                    loading="lazy"
                     alt="Pont Saint-Pierre"
                     width="512"
                     height="320">
@@ -68,7 +70,6 @@
                   srcset="img/03-b-musée_des_Augustins-640.jpeg 640w,
                           img/03-b-musée_des_Augustins-1280.jpeg 1280w"
                   sizes="(max-width: 640px) 100vw, 50vw"
-                  loading="lazy"
                   alt="Museo de los Agustinos"
                   width="512"
                   height="320">
@@ -92,7 +93,6 @@
                   srcset="img/03-b-Cité_de_l'espace-640.jpeg 640w,
                           img/03-b-Cité_de_l'espace-1280.jpeg 1280w"
                   sizes="(max-width: 640px) 100vw, 50vw"
-                  loading="lazy"
                   alt="Cité de l'Espace"
                   width="512"
                   height="320">
